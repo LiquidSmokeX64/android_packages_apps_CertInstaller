@@ -9,6 +9,9 @@ LOCAL_JAVA_LIBRARIES := bouncycastle
 LOCAL_PACKAGE_NAME := CertInstaller
 LOCAL_CERTIFICATE := platform
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
